@@ -24,5 +24,6 @@ names=list(range(1,32)) # do obadania jutro
 plt.bar(names,daySumEnchanced)
 plt.ylabel('Rampapam')
 #plt.show()
+print("Changes!")
 
 
