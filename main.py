@@ -25,5 +25,5 @@ plt.bar(names,daySumEnchanced)
 plt.ylabel('Rampapam')
 #plt.show()
 print("Changes!")
-
+print("blabla")
 
