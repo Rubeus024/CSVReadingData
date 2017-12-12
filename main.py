@@ -7,6 +7,25 @@ sumTotal=0.0
 averageExpenses=0.0
 months=list(range(1,13))
 
+listOfMonths=[]
+
+
+class ChartData:
+    def __init__(self):
+        self.sumOfDays = [0.0] * 31
+        self.sumTotal = 0.0
+        self.averageExpenses = 0.0
+        self.months = list(range(1, 13))
+
+    def DayConverter(self,dayCopy,row):
+        if (dayCopy[0] == '0'):
+            dayCopy = dayCopy[1]  # nie rozumiem
+        self.sumOfDays[int(dayCopy) - 1] += float(row["Amount"])
+
+for i in list(range(1,13)):
+    listOfMonths.append(ChartData() )
+    print(str(i))
+
 
 def DayConverter(dayCopy):
     if (dayCopy[0] == '0'):
