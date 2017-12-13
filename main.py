@@ -20,7 +20,7 @@ class ChartData:
         self.sumTotal = sum(self.sumOfDays)
 
     def average_expenses(self):
-        self.average_expenses = self.sumTotal/len(self.sumOfDays)
+        self.averageExpenses = self.sumTotal/len(self.sumOfDays)
 
 # Obiekt zapisujący wykresy
 pp = PdfPages("charts.pdf")
