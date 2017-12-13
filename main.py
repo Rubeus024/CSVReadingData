@@ -15,6 +15,7 @@ class ChartData:
             dayCopy = dayCopy[1]
 
         self.sumOfDays[int(dayCopy) - 1] += float(row["Amount"])
+        self.sumTotal+=float(row["Amount"])
 
     def SumTotal(self):
         self.sumTotal=sum(self.sumOfDays)
@@ -25,7 +26,9 @@ class ChartData:
 #Obiekt zapisujący wykresy
 pp = PdfPages("charts.pdf")
 #Lista miesięcy
-listOfMonths=[ChartData()]*13
+listOfMonths=[]
+for i in range(1,14):
+    listOfMonths.append(ChartData())
 
 #Ciało programu
 with open('csvFile.csv') as myFile:
@@ -33,14 +36,15 @@ with open('csvFile.csv') as myFile:
 
     #Wydobywanie informacji z pliku csv
     for row in read:
-        day, month, year = row['Operation date'].split('-')
+        if(row['Type']=='1'):
+            day, month, year = row['Operation date'].split('-')
 
-        #Na razie tylko dwa miesiące
-        if(str(month)=='11'):
-            #Liczenie wydatków przypadający na kolejne dni
-            listOfMonths[11].DayConverter(str(day),row)
-        elif(str(month)=='12'):
-            listOfMonths[12].DayConverter(str(day), row)
+            #Na razie tylko dwa miesiące
+            if(str(month)=='11'):
+                #Liczenie wydatków przypadający na kolejne dni
+                listOfMonths[11].DayConverter(str(day),row)
+            else:
+                listOfMonths[12].DayConverter(str(day), row)
 
 
 #generowanie średniej oraz sumy
@@ -53,12 +57,14 @@ plt.subplot()
 plt.bar(range(1,32), listOfMonths[11].sumOfDays)
 plt.ylabel('Rampapam')
 plt.title("Listopad")
+plt.gcf().text(0.2, 0.03,'Sum:'+str( round(listOfMonths[11].sumTotal,2) )+' zł,'+'  Average expenses: '+str(round(listOfMonths[11].averageExpenses,2))+' zł', fontsize=14)
 pp.savefig()
-#plt.show()
+plt.show()
 plt.bar(range(1,32), listOfMonths[12].sumOfDays)
 plt.title("Grudzień")
+plt.gcf().text(0.2, 0.03,'Sum:'+str( round(listOfMonths[12].sumTotal,2) )+' zł,'+'  Average expenses: '+str(round(listOfMonths[12].averageExpenses,2))+' zł', fontsize=14)
 pp.savefig()
-#plt.show()
+plt.show()
 
 pp.close()
 
