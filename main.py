@@ -68,7 +68,7 @@ for obj in listOfMonths:
         plt.ylabel('zł')
         plt.title(monthDict[counter])
         plt.gcf().text(0.2, 0.03, 'Sum:' + str(round(obj.sumTotal, 2)) + ' zł,' + '  Average expenses: ' +
-                       str(round(obj.averageExpenses, 2)) + ' zł', fontsize=14)
+                       str(round(obj.averageExpenses, 2)) + ' zł', fontsize=12)
         pp.savefig()
         plt.show()
     counter += 1
