@@ -4,8 +4,10 @@ import matplotlib.pyplot as plt
 
 
 class ChartData:
-    def __init__(self):
-        self.sumOfDays = [0.0] * 31  # do poprawy - nie każdy miesiąc ma 31 dni!!!!!!!!!!!!
+    def __init__(self, monthstring='', numberofdays=30):
+        self.numberOfDays = numberofdays
+        self.monthString = monthstring
+        self.sumOfDays = [0.0] * self.numberOfDays
         self.sumTotal = 0.0
         self.averageExpenses = 0.0
 
@@ -19,26 +21,21 @@ class ChartData:
     def sum_total(self):
         self.sumTotal = sum(self.sumOfDays)
 
-    def average_expenses(self):
-        self.averageExpenses = self.sumTotal/len(self.sumOfDays)
+    def average_expenses(self):  # do przerobienia
+        self.averageExpenses = self.sumTotal / self.numberOfDays
 
 # Obiekt zapisujący wykresy
 pp = PdfPages("charts.pdf")
 
-
-monthDict = { 0 : 'Styczeń', 1 : 'Luty', 2 : 'Marzec', 3 : 'Marzec', 4 : 'Kwiecień', 5 : 'Maj', 6 : 'Czerwiec', 7 : 'Lipiec',
-              8: 'Sierpień',
-              9: 'Wrzesień',
-              10: 'Październik',
-              11: 'Listopad',
-              12: 'Grudzień',
-              }
-
-
 # Lista miesięcy
-listOfMonths = []
-for obj in range(1, 14):
-    listOfMonths.append(ChartData())
+listOfMonths = {'00': ChartData('Styczeń', 31), '01': ChartData('Styczeń', 31), '02': ChartData('Luty', 28),
+                '03': ChartData('Marzec', 31),
+                '04': ChartData('Kwiecień', 30),'05': ChartData('Maj', 31),
+                '06': ChartData('Czerwiec', 30), '07': ChartData('Lipiec', 31),
+                '08': ChartData('Sierpień', 31), '09': ChartData('Wrzesień', 30), '10': ChartData('Październik', 31),
+                '11': ChartData('Listopad', 30), '12': ChartData('Grudzień', 31)}
+#for obj in range(1, 14):
+#    listOfMonths.append(ChartData())
 
 
 # Ciało programu
@@ -51,24 +48,22 @@ with open('csvFile.csv') as myFile:
             day, month, year = row['Operation date'].split('-')
 
             # Na razie tylko dwa miesiące
-            if str(month) == '11':
+
                 # Liczenie wydatków przypadający na kolejne dni
-                listOfMonths[11].day_converter(str(day), row)
-            else:
-                listOfMonths[12].day_converter(str(day), row)
+            listOfMonths[month].day_converter(str(day), row)
 
 
 # Generowanie średniej, sumy oraz zapisywanie wyników
 counter = 0 # można to poprawić?
-for obj in listOfMonths:
-    obj.sum_total()
-    obj.average_expenses()
-    if obj.sumTotal != 0:
-        plt.bar(range(1, 32), listOfMonths[counter].sumOfDays)
+for key,value in listOfMonths.items():
+    value.sum_total()
+    value.average_expenses()
+    if value.sumTotal != 0:
+        plt.bar(range(1, value.numberOfDays+1), listOfMonths[str(counter)].sumOfDays)
         plt.ylabel('zł')
-        plt.title(monthDict[counter])
-        plt.gcf().text(0.2, 0.03, 'Sum:' + str(round(obj.sumTotal, 2)) + ' zł,' + '  Average expenses: ' +
-                       str(round(obj.averageExpenses, 2)) + ' zł', fontsize=12)
+        plt.title(value.monthString)
+        plt.gcf().text(0.2, 0.03, 'Sum:' + str(round(value.sumTotal, 2)) + ' zł,' + '  Average expenses: ' +
+                       str(round(value.averageExpenses, 2)) + ' zł', fontsize=12)
         pp.savefig()
         plt.show()
     counter += 1
