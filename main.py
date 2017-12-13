@@ -24,10 +24,22 @@ class ChartData:
 
 # Obiekt zapisujący wykresy
 pp = PdfPages("charts.pdf")
+
+
+monthDict = { 0 : 'Styczeń', 1 : 'Luty', 2 : 'Marzec', 3 : 'Marzec', 4 : 'Kwiecień', 5 : 'Maj', 6 : 'Czerwiec', 7 : 'Lipiec',
+              8: 'Sierpień',
+              9: 'Wrzesień',
+              10: 'Październik',
+              11: 'Listopad',
+              12: 'Grudzień',
+              }
+
+
 # Lista miesięcy
 listOfMonths = []
-for i in range(1, 14):
+for obj in range(1, 14):
     listOfMonths.append(ChartData())
+
 
 # Ciało programu
 with open('csvFile.csv') as myFile:
@@ -46,25 +58,19 @@ with open('csvFile.csv') as myFile:
                 listOfMonths[12].day_converter(str(day), row)
 
 
-# Generowanie średniej oraz sumy
-for i in listOfMonths:
-    i.SumTotal()
-    i.AverageExpenses()
-
-# Prezentacja wyników
-plt.subplot()
-plt.bar(range(1, 32), listOfMonths[11].sumOfDays)
-plt.ylabel('Rampapam')
-plt.title("Listopad")
-plt.gcf().text(0.2, 0.03, 'Sum:'+str(round(listOfMonths[11].sumTotal, 2))+' zł,'+'  Average expenses: ' +
-               str(round(listOfMonths[11].averageExpenses, 2))+' zł', fontsize=14)
-pp.savefig()
-plt.show()
-plt.bar(range(1, 32), listOfMonths[12].sumOfDays)
-plt.title("Grudzień")
-plt.gcf().text(0.2, 0.03, 'Sum:'+str(round(listOfMonths[12].sumTotal, 2) )+' zł,'+'  Average expenses: ' +
-               str(round(listOfMonths[12].averageExpenses, 2))+' zł', fontsize=14)
-pp.savefig()
-plt.show()
+# Generowanie średniej, sumy oraz zapisywanie wyników
+counter = 0 # można to poprawić?
+for obj in listOfMonths:
+    obj.sum_total()
+    obj.average_expenses()
+    if obj.sumTotal != 0:
+        plt.bar(range(1, 32), listOfMonths[counter].sumOfDays)
+        plt.ylabel('zł')
+        plt.title(monthDict[counter])
+        plt.gcf().text(0.2, 0.03, 'Sum:' + str(round(obj.sumTotal, 2)) + ' zł,' + '  Average expenses: ' +
+                       str(round(obj.averageExpenses, 2)) + ' zł', fontsize=14)
+        pp.savefig()
+        plt.show()
+    counter += 1
 
 pp.close()
