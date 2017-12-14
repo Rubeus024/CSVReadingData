@@ -31,6 +31,7 @@ class OutputPictures:
 class ChartData:
     '''
     Przed uruchomieniem programu należy usunąć w pliku cvs zdublowaną kolumnę
+    Nie zostały dodane dekoratory @property - szkoda kodu na taki mały program
     '''
     def __init__(self, monthstring='', numberofdays=30):
         self.categoryList = {'Jedzenie': 0.0, 'Czynsz': 0.0, 'Transport': 0.0, 'Odzież': 0.0,
