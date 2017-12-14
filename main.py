@@ -82,7 +82,7 @@ with open('csvFile.csv') as myFile:
         if row['Type'] == '1':
             day, month, year = row['Operation date'].split('-')
 
-            # Liczenie wydatków przypadający na kolejne dni
+            # Przyporządkowanie wydatku
             listOfMonths[month].day_converter(str(day), row)
             if row['Category'] in listOfMonths[month].categoryList:
                 listOfMonths[month].add(float(row['Amount']), row['Category'])
