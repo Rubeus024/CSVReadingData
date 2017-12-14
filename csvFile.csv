@@ -1,89 +1,92 @@
-Operation date;Type;Title;Amount;Note;Category name;Category name;Account name
-06-11-2017;1;Wesele Pawla;191.00;;Zabawa;;Bie¿¹ce wydatki
-06-11-2017;1;;6.00;;Jedzenie;;Bie¿¹ce wydatki
-07-11-2017;1;;400.00;;Czynsz;Dom;Bie¿¹ce wydatki
-07-11-2017;1;;14.00;;Transport;;Bie¿¹ce wydatki
-07-11-2017;1;Bilet kwartalny;137.00;;Transport;;Bie¿¹ce wydatki
-07-11-2017;1;;31.00;;;;Bie¿¹ce wydatki
-08-11-2017;1;;13.00;;;;Bie¿¹ce wydatki
-08-11-2017;0;;80.00;;;;Korepetycje
-08-11-2017;0;;60.00;;;;Korepetycje
-08-11-2017;1;;13.50;;;;Bie¿¹ce wydatki
-10-11-2017;1;;28.00;;;;Bie¿¹ce wydatki
-10-11-2017;0;Ksi¹¿ki allegro ;87.00;;Premia;Praca;Korepetycje
-10-11-2017;1;;14.00;;Transport;;Bie¿¹ce wydatki
-13-11-2017;1;;14.00;;Transport;;Bie¿¹ce wydatki
-13-11-2017;1;;25.00;;Odzie¿;;Bie¿¹ce wydatki
-14-11-2017;1;;12.00;;;;Bie¿¹ce wydatki
-15-11-2017;1;;14.00;;Restauracja;Jedzenie;Bie¿¹ce wydatki
-15-11-2017;1;;10.00;;Jedzenie;;Bie¿¹ce wydatki
-16-11-2017;0;Denis+Krystian;120.00;;;;Korepetycje
-16-11-2017;1;;18.00;;Restauracja;Jedzenie;Bie¿¹ce wydatki
-16-11-2017;1;Piwo Piotrek;15.00;;Zabawa;;Bie¿¹ce wydatki
-17-11-2017;1;;6.00;;;;Bie¿¹ce wydatki
-17-11-2017;0;Oskar;35.00;;;;Korepetycje
-17-11-2017;1;mc Donald;20.00;;Jedzenie;;Bie¿¹ce wydatki
-17-11-2017;1;;16.00;;Transport;;Bie¿¹ce wydatki
-19-11-2017;1;S³uchawki;50.00;;Elektronika;;Bie¿¹ce wydatki
-19-11-2017;1;;15.00;;Transport;;Bie¿¹ce wydatki
-19-11-2017;1;;160.00;;Buty;Odzie¿;Bie¿¹ce wydatki
-19-11-2017;1;;80.00;;Akcesoria;Elektronika;Bie¿¹ce wydatki
-19-11-2017;1;Szalik;35.00;;Odzie¿;;Bie¿¹ce wydatki
-20-11-2017;1;Obiad;14.50;;Jedzenie;;Bie¿¹ce wydatki
-20-11-2017;1;Kawa;2.80;;Jedzenie;;Bie¿¹ce wydatki
-20-11-2017;1;Bu³ka i woda;5.00;;Jedzenie;;Bie¿¹ce wydatki
-21-11-2017;1;Drobne zakupy(piwo, czypsy, rzodk., banany;10.00;;Jedzenie;;Bie¿¹ce wydatki
-21-11-2017;1;Obiad;13.50;;Jedzenie;;Bie¿¹ce wydatki
-21-11-2017;1;Kawa;2.80;;Jedzenie;;Bie¿¹ce wydatki
-21-11-2017;0;Oskar;35.00;;;;Korepetycje
-22-11-2017;0;Krystian;80.00;;;;Korepetycje
-22-11-2017;0;Denis;60.00;;;;Korepetycje
-23-11-2017;1;Tosty;11.89;;Jedzenie;;Bie¿¹ce wydatki
-24-11-2017;1;;12.00;;Transport;;Bie¿¹ce wydatki
-26-11-2017;1;Fajne spodnie;70.00;;Spodnie;Odzie¿;Bie¿¹ce wydatki
-26-11-2017;1;Transport Ola;10.00;;Transport;;Bie¿¹ce wydatki
-26-11-2017;1;Choinka;17.00;;Pierdo³y;;Bie¿¹ce wydatki
-26-11-2017;1;Rysunek;10.00;;Zabawa;;Bie¿¹ce wydatki
-26-11-2017;1;chipsy Black i jaja;19.00;;Jedzenie;;Bie¿¹ce wydatki
-27-11-2017;1;Bu³a;3.50;;Jedzenie;;Bie¿¹ce wydatki
-27-11-2017;1;Kawa;2.80;;Jedzenie;;Bie¿¹ce wydatki
-27-11-2017;0;Denis logika;60.00;;;;Korepetycje
-27-11-2017;0;Krystian;40.00;;;;Korepetycje
-28-11-2017;1;Bu³ka;3.50;;Jedzenie;;Bie¿¹ce wydatki
-28-11-2017;1;Obiad;14.00;;Jedzenie;;Bie¿¹ce wydatki
-29-11-2017;1;biedra;19.00;;Jedzenie;;Bie¿¹ce wydatki
-29-11-2017;0;Magda $$$;280.00;;;;Korepetycje
-30-11-2017;1;Czipsy, papier, bulki;12.00;;Jedzenie;;Bie¿¹ce wydatki
-30-11-2017;1;Pizza;18.00;;Jedzenie;;Bie¿¹ce wydatki
-30-11-2017;0;Krystian;40.00;;;;Korepetycje
-01-12-2017;1;Szapinka I skarpetki;30.00;;Odzie¿;;Bie¿¹ce wydatki
-02-12-2017;1;Wyciskarka;9.60;;Pierdo³y;;Bie¿¹ce wydatki
-02-12-2017;1;Tel abonament;40.00;;Telefon;Elektronika;Bie¿¹ce wydatki
-02-12-2017;1;hotdog, Papier œwi¹teczny 2,49, grejpfrut, piwo za 3,5 i dwie inne rzeczy;21.64;;;;Bie¿¹ce wydatki
-03-12-2017;1;Kasper;15.00;;Transport;;Bie¿¹ce wydatki
-04-12-2017;1;Kawa;2.00;;Jedzenie;;Bie¿¹ce wydatki
-04-12-2017;1;Obiad;13.50;;Jedzenie;;Bie¿¹ce wydatki
-04-12-2017;1;Akademik;400.00;;Czynsz;Dom;Bie¿¹ce wydatki
-04-12-2017;0;Denis nierownosci;60.00;;;;Korepetycje
-04-12-2017;0;Krystian;40.00;;;;Korepetycje
-04-12-2017;1;Pizza plus browar;25.00;;Jedzenie;;Bie¿¹ce wydatki
-05-12-2017;1;obiad makaron + cola za 1,2;17.00;;Jedzenie;;Bie¿¹ce wydatki
-05-12-2017;1;Zestaw do szkicu;30.00;;;;Bie¿¹ce wydatki
-05-12-2017;0;Magda;35.00;;;;Korepetycje
-06-12-2017;1;obiad nawojka;13.50;;Jedzenie;;Bie¿¹ce wydatki
-06-12-2017;1;Kawa;3.80;;Jedzenie;;Bie¿¹ce wydatki
-06-12-2017;1;Temperowka;3.90;;;;Bie¿¹ce wydatki
-06-12-2017;1;Kebab :);12.00;;;;Bie¿¹ce wydatki
-07-12-2017;0;Kacper korki;40.00;;;;Korepetycje
-07-12-2017;1;Termometry;14.00;;Dom;;Bie¿¹ce wydatki
-07-12-2017;1;Tosty;13.00;;Jedzenie;;Bie¿¹ce wydatki
-07-12-2017;1;Fryzjer;24.00;;;;Bie¿¹ce wydatki
-07-12-2017;1;Obiad;14.50;;;;Bie¿¹ce wydatki
-07-12-2017;1;Piwo;8.00;;Zabawa;;Bie¿¹ce wydatki
-07-12-2017;1;Interpalm;14.00;;Transport;;Bie¿¹ce wydatki
-07-12-2017;0;Krystian;40.00;;;;Korepetycje
-07-12-2017;0;Magda;35.00;;;;Korepetycje
-10-12-2017;1;;14.00;;Transport;;Bie¿¹ce wydatki
-10-12-2017;1;chleb piwo paluszki;8.40;;Jedzenie;;Bie¿¹ce wydatki
-11-12-2017;1;Obiad;14.50;;Jedzenie;;Bie¿¹ce wydatki
-11-12-2017;1;jaja jogurt bu³ki piwo;16.00;;Jedzenie;;Bie¿¹ce wydatki
+Operation date;Type;Title;Amount;Note;Category;Account name
+06-11-2017;1;Wesele Pawla;191.00;;Zabawa;
+06-11-2017;1;;6.00;;Jedzenie;Bie¿¹ce wydatki
+07-11-2017;1;;400.00;;Czynsz;Bie¿¹ce wydatki
+07-11-2017;1;;14.00;;Transport;Bie¿¹ce wydatki
+07-11-2017;1;Bilet kwartalny;137.00;;Transport;Bie¿¹ce wydatki
+07-11-2017;1;;31.00;;;Bie¿¹ce wydatki
+08-11-2017;1;;13.00;;;Bie¿¹ce wydatki
+08-11-2017;0;;80.00;;;Korepetycje
+08-11-2017;0;;60.00;;;Korepetycje
+08-11-2017;1;;13.50;;;Bie¿¹ce wydatki
+10-11-2017;1;;28.00;;;Bie¿¹ce wydatki
+10-11-2017;0;Ksi¹¿ki allegro ;87.00;;Premia;Korepetycje
+10-11-2017;1;;14.00;;Transport;Bie¿¹ce wydatki
+13-11-2017;1;;14.00;;Transport;Bie¿¹ce wydatki
+13-11-2017;1;;25.00;;Odzie¿;Bie¿¹ce wydatki
+14-11-2017;1;;12.00;;;Bie¿¹ce wydatki
+15-11-2017;1;;14.00;;Restauracja;Bie¿¹ce wydatki
+15-11-2017;1;;10.00;;Jedzenie;Bie¿¹ce wydatki
+16-11-2017;0;Denis+Krystian;120.00;;;Korepetycje
+16-11-2017;1;;18.00;;Restauracja;Bie¿¹ce wydatki
+16-11-2017;1;Piwo Piotrek;15.00;;Zabawa;Bie¿¹ce wydatki
+17-11-2017;1;;6.00;;;Bie¿¹ce wydatki
+17-11-2017;0;Oskar;35.00;;;Korepetycje
+17-11-2017;1;mc Donald;20.00;;Jedzenie;Bie¿¹ce wydatki
+17-11-2017;1;;16.00;;Transport;Bie¿¹ce wydatki
+19-11-2017;1;S³uchawki;50.00;;Elektronika;Bie¿¹ce wydatki
+19-11-2017;1;;15.00;;Transport;Bie¿¹ce wydatki
+19-11-2017;1;;160.00;;Buty;Bie¿¹ce wydatki
+19-11-2017;1;;80.00;;Akcesoria;Bie¿¹ce wydatki
+19-11-2017;1;Szalik;35.00;;Odzie¿;Bie¿¹ce wydatki
+20-11-2017;1;Obiad;14.50;;Jedzenie;Bie¿¹ce wydatki
+20-11-2017;1;Kawa;2.80;;Jedzenie;Bie¿¹ce wydatki
+20-11-2017;1;Bu³ka i woda;5.00;;Jedzenie;Bie¿¹ce wydatki
+21-11-2017;1;Drobne zakupy(piwo, czypsy, rzodk., banany;10.00;;Jedzenie;Bie¿¹ce wydatki
+21-11-2017;1;Obiad;13.50;;Jedzenie;Bie¿¹ce wydatki
+21-11-2017;1;Kawa;2.80;;Jedzenie;Bie¿¹ce wydatki
+21-11-2017;0;Oskar;35.00;;;Korepetycje
+22-11-2017;0;Krystian;80.00;;;Korepetycje
+22-11-2017;0;Denis;60.00;;;Korepetycje
+23-11-2017;1;Tosty;11.89;;Jedzenie;Bie¿¹ce wydatki
+24-11-2017;1;;12.00;;Transport;Bie¿¹ce wydatki
+26-11-2017;1;Fajne spodnie;70.00;;Spodnie;Bie¿¹ce wydatki
+26-11-2017;1;Transport Ola;10.00;;Transport;Bie¿¹ce wydatki
+26-11-2017;1;Choinka;17.00;;Pierdo³y;Bie¿¹ce wydatki
+26-11-2017;1;Rysunek;10.00;;Zabawa;Bie¿¹ce wydatki
+26-11-2017;1;chipsy Black i jaja;19.00;;Jedzenie;Bie¿¹ce wydatki
+27-11-2017;1;Bu³a;3.50;;Jedzenie;Bie¿¹ce wydatki
+27-11-2017;1;Kawa;2.80;;Jedzenie;Bie¿¹ce wydatki
+27-11-2017;0;Denis logika;60.00;;;Korepetycje
+27-11-2017;0;Krystian;40.00;;;Korepetycje
+28-11-2017;1;Bu³ka;3.50;;Jedzenie;Bie¿¹ce wydatki
+28-11-2017;1;Obiad;14.00;;Jedzenie;Bie¿¹ce wydatki
+29-11-2017;1;biedra;19.00;;Jedzenie;Bie¿¹ce wydatki
+29-11-2017;0;Magda $$$;280.00;;;Korepetycje
+30-11-2017;1;Czipsy, papier, bulki;12.00;;Jedzenie;Bie¿¹ce wydatki
+30-11-2017;1;Pizza;18.00;;Jedzenie;Bie¿¹ce wydatki
+30-11-2017;0;Krystian;40.00;;;Korepetycje
+01-12-2017;1;Szapinka I skarpetki;30.00;;Odzie¿;Bie¿¹ce wydatki
+02-12-2017;1;Wyciskarka;9.60;;Pierdo³y;Bie¿¹ce wydatki
+02-12-2017;1;Tel abonament;40.00;;Telefon;Bie¿¹ce wydatki
+02-12-2017;1;hotdog, Papier œwi¹teczny 2,49, grejpfrut, piwo za 3,5 i dwie inne rzeczy;21.64;;;Bie¿¹ce wydatki
+03-12-2017;1;Kasper;15.00;;Transport;Bie¿¹ce wydatki
+04-12-2017;1;Kawa;2.00;;Jedzenie;Bie¿¹ce wydatki
+04-12-2017;1;Obiad;13.50;;Jedzenie;Bie¿¹ce wydatki
+04-12-2017;1;Akademik;400.00;;Czynsz;Bie¿¹ce wydatki
+04-12-2017;0;Denis nierownosci;60.00;;;Korepetycje
+04-12-2017;0;Krystian;40.00;;;Korepetycje
+04-12-2017;1;Pizza plus browar;25.00;;Jedzenie;Bie¿¹ce wydatki
+05-12-2017;1;obiad makaron + cola za 1,2;17.00;;Jedzenie;Bie¿¹ce wydatki
+05-12-2017;1;Zestaw do szkicu;30.00;;;Bie¿¹ce wydatki
+05-12-2017;0;Magda;35.00;;;Korepetycje
+06-12-2017;1;obiad nawojka;13.50;;Jedzenie;Bie¿¹ce wydatki
+06-12-2017;1;Kawa;3.80;;Jedzenie;Bie¿¹ce wydatki
+06-12-2017;1;Temperowka;3.90;;;Bie¿¹ce wydatki
+06-12-2017;1;Kebab :);12.00;;;Bie¿¹ce wydatki
+07-12-2017;0;Kacper korki;40.00;;;Korepetycje
+07-12-2017;1;Termometry;14.00;;Dom;Bie¿¹ce wydatki
+07-12-2017;1;Tosty;13.00;;Jedzenie;Bie¿¹ce wydatki
+07-12-2017;1;Fryzjer;24.00;;;Bie¿¹ce wydatki
+07-12-2017;1;Obiad;14.50;;;Bie¿¹ce wydatki
+07-12-2017;1;Piwo;8.00;;Zabawa;Bie¿¹ce wydatki
+07-12-2017;1;Interpalm;14.00;;Transport;Bie¿¹ce wydatki
+07-12-2017;0;Krystian;40.00;;;Korepetycje
+07-12-2017;0;Magda;35.00;;;Korepetycje
+10-12-2017;1;;14.00;;Transport;Bie¿¹ce wydatki
+10-12-2017;1;chleb piwo paluszki;8.40;;Jedzenie;Bie¿¹ce wydatki
+11-12-2017;1;Obiad;14.50;;Jedzenie;Bie¿¹ce wydatki
+11-12-2017;1;jaja jogurt bu³ki piwo;16.00;;Jedzenie;Bie¿¹ce wydatki
+13-12-2017;1;Obiad;14.50;;Jedzenie;Bie¿¹ce wydatki
+13-12-2017;1;Kebab :);12.00;;Jedzenie;Bie¿¹ce wydatki
+13-12-2017;1;;3.00;;Jedzenie;Bie¿¹ce wydatki
