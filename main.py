@@ -53,9 +53,9 @@ class ChartData:
     def sum_total(self):
         self.sumTotal = sum(self.sumOfDays)
 
-    @staticmethod
+
     def average_expenses(self):  # do przerobienia
-        self.averageExpenses = self.sumTotal / self.numberOfDays
+        self.averageExpenses = (self.sumTotal/float(self.numberOfDays))
 
     def add(self, categoryamount, string):
         self.categoryList[string] += categoryamount
@@ -90,5 +90,7 @@ with open('csvFile.csv') as myFile:
 
 # Generowanie średniej, sumy oraz zapisywanie wyników
 for key,value in listOfMonths.items():
+    #Obliczanie średniej
+    value.average_expenses()
     OutputPictures.write(value)
 pp.close()
