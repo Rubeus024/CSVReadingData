@@ -71,7 +71,7 @@ listOfMonths = {'00': ChartData('Styczeń', 31), '01': ChartData('Styczeń', 31)
                 '08': ChartData('Sierpień', 31), '09': ChartData('Wrzesień', 30), '10': ChartData('Październik', 31),
                 '11': ChartData('Listopad', 30), '12': ChartData('Grudzień', 31)}
 
-# Ciało programu
+# Główny program
 # Miesiące w listOfMonths są przyporządkowane do liczb typu string, w celu łatwego połączenia je
 # ze stringiem month z pliku csv
 with open('csvFile.csv') as myFile:
